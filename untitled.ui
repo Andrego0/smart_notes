@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #88acb8;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="note_text">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>611</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#c8d1a3;
+color: white;
+border-radius:10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="titel_note_edit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>611</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#c8d1a3;
+color: white;
+border-radius:10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="create_notes">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_note">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>60</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="list_notes">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>110</y>
+      <width>131</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#c8d1a3;
+color: white;
+border-radius:10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_notes">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="tag_list">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>421</y>
+      <width>131</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#c8d1a3;
+color: white;
+border-radius:10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_tag">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>360</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string> Add Tag</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="open_tag">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>360</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Open Tag</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="search_tag">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>390</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: #10c215;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Search Tag</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>789</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
