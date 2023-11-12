@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>789</width>
+    <width>788</width>
     <height>600</height>
    </rect>
   </property>
@@ -28,7 +28,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:#c8d1a3;
-color: white;
+color: black;
 border-radius:10px;</string>
     </property>
    </widget>
@@ -43,7 +43,7 @@ border-radius:10px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:#c8d1a3;
-color: white;
+color: black;
 border-radius:10px;</string>
     </property>
    </widget>
@@ -94,7 +94,7 @@ border-radius:10px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:#c8d1a3;
-color: white;
+color: black;
 border-radius:10px;</string>
     </property>
    </widget>
@@ -127,7 +127,7 @@ border-radius:10px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:#c8d1a3;
-color: white;
+color: black;
 border-radius:10px;</string>
     </property>
    </widget>
@@ -191,7 +191,7 @@ border-radius:10px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>789</width>
+     <width>788</width>
      <height>21</height>
     </rect>
    </property>
