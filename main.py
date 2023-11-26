@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QApplication, QInputDialog
 from PyQt5.QtWidgets import QMainWindow, QMessageBox
 from ui import Ui_MainWindow
 
@@ -18,6 +18,8 @@ class NoteWidget(QMainWindow):
         self.ui.create_notes.clicked.connect(self.add_note)
         self.ui.save_note.clicked.connect(self.save_note)
         self.ui.delete_notes.clicked.connect(self.del_note)
+        self.ui.add_tag.clicked.connect(self.add_tag)
+        self.ui.open_tag.clicked.connect(self.del_tag)
 
         
 
@@ -57,8 +59,10 @@ class NoteWidget(QMainWindow):
     def save_note(self):
         title = self.ui.titel_note_edit.text()
         text = self.ui.note_text.toPlainText()
-
-        self.notes[title] = {"текст": text, "теги": []}
+        if title not in self.notes:
+            self.notes[title] = {"текст": text, "теги": []}
+        else:
+            self.notes[title]["текст"] = text
         self.save_file()
         self.ui.list_notes.clear()
         self.ui.list_notes.addItems(self.notes)
@@ -71,6 +75,29 @@ class NoteWidget(QMainWindow):
             self.ui.list_notes.addItems(self.notes)
             self.save_file()
             self.add_note()
+
+    def add_tag(self):
+        title = self.ui.titel_note_edit.text()
+        tag_title, ok = QInputDialog.getText(self,"Введіть, тег", "Назва тега")
+        if ok and tag_title != "" and title != "":
+            self.notes[title]["теги"].append(tag_title)
+            self.ui.tag_list.clear()
+            self.ui.tag_list.addItems(self.notes[title]["теги"])
+
+    def del_tag(self):
+        title = self.ui.titel_note_edit.text()
+        try:
+            tag_title = self.ui.tag_list.selectedItems()[0].text()
+        except:
+            tag_title = None
+        if tag_title and title != "":
+            self.notes[title]["теги"].remove(tag_title)
+            self.ui.tag_list.clear()
+            self.ui.tag_list.addItems(self.notes[title]["теги"])
+
+
+
+
 
 app = QApplication([])
 ex = NoteWidget()
